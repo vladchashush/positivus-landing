@@ -6,4 +6,4 @@ function sum(first, second) {
   return first + second;
 }
 
-sum(a, b);
+console.log(sum(a, b));
