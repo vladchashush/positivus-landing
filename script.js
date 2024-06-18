@@ -7,3 +7,5 @@ function sum(first, second) {
 }
 
 console.log(sum(a, b));
+
+sum(a, b);
