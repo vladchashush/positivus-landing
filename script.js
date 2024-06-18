@@ -9,3 +9,5 @@ function sum(first, second) {
 console.log(sum(a, b));
 
 console.log("Hello world!!");
+
+sum(a, b);
