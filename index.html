@@ -3,9 +3,182 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Positivus</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
-    <script src="/script.js"></script>
+    <header class="header">
+      <div class="header__inner container">
+        <a href="/" class="header__logo logo">
+          <img
+            src="./images/logo.svg"
+            alt="Positivus logo"
+            class="logo__image"
+            width="220"
+            height="36"
+            loading="lazy"
+          />
+        </a>
+        <nav class="header__menu hidden-mobile">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">About us</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Services</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Use Cases</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Pricing</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="header__button button button--transparent hidden-mobile"
+          type="button"
+        >
+          Request a quote
+        </button>
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          onclick="mobileOverlay.showModal()"
+        >
+          <span class="visually-hidden">Open navigation menu</span>
+        </button>
+      </div>
+    </header>
+    <main class="content">
+      <section class="section container">
+        <div class="section__body">
+          <div class="hero">
+            <div class="hero__main">
+              <div class="hero__body">
+                <h1 class="her__title">
+                  Navigating the digital landscape for success
+                </h1>
+                <div class="hero__description">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur, doloremque ducimus obcaecati a temporibus
+                    nihil pariatur suscipit, id beatae quod ex recusandae maxime
+                    laboriosam quibusdam sit soluta possimus earum! Praesentium!
+                  </p>
+                </div>
+                <button class="hero__button button" type="button">
+                  Book a partner
+                </button>
+              </div>
+              <img
+                src="./images/hero-img.svg"
+                alt=""
+                class="hero__image"
+                width="600"
+                height="515"
+                loading="lazy"
+              />
+            </div>
+            <div class="hero__partners">
+              <h2 class="visually-hidden">Our partners</h2>
+              <ul class="hero__partners-list">
+                <li class="hero__partners-item">
+                  <img
+                    src="./images/partners/logo-1.svg"
+                    alt="Amazon"
+                    class="hero__partners-image"
+                    width="130px"
+                    height="48px"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="hero__partners-item">
+                  <img
+                    src="./images/partners/logo-2.svg"
+                    alt="Dribble"
+                    class="hero__partners-image"
+                    width="130px"
+                    height="48px"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="hero__partners-item">
+                  <img
+                    src="./images/partners/logo-3.svg"
+                    alt="Hubspot"
+                    class="hero__partners-image"
+                    width="130px"
+                    height="48px"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="hero__partners-item">
+                  <img
+                    src="./images/partners/logo-4.svg"
+                    alt="Notion"
+                    class="hero__partners-image"
+                    width="130px"
+                    height="48px"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="hero__partners-item">
+                  <img
+                    src="./images/partners/logo-5.svg"
+                    alt="Netflix"
+                    class="hero__partners-image"
+                    width="130px"
+                    height="48px"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="hero__partners-item">
+                  <img
+                    src="./images/partners/logo-6.svg"
+                    alt="Zoom"
+                    class="hero__partners-image"
+                    width="130px"
+                    height="48px"
+                    loading="lazy"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="mobile-overlay visibale-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button class="mobile-overlay__close-button cross-button" type="submit">
+          <span class="visually-hidden">Close navigation menu</span>
+        </button>
+      </form>
+      <div class="mobile-overlay__body">
+        <ul class="mobile-overlay__list">
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">About us</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">Services</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">Use Cases</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">Pricing</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+    <script src="/script.js" defer></script>
   </body>
 </html>
