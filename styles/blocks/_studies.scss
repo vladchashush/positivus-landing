@@ -1,12 +1,25 @@
 .studies {
-  padding: 70px 60px;
-  color: var(--color-light);
-  background-color: var(--color-dark);
-  border-radius: var(--border-radius-large);
+  @include desktop-above {
+    padding: 70px 60px;
+  }
+
+  @include mobile-above {
+    padding: 40px;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border-radius: var(--border-radius-large);
+  }
 
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    @include mobile {
+      scroll-snap-type: x mandatory;
+      overflow-x: scroll;
+      width: 100vw;
+      column-gap: 20px;
+    }
   }
 
   &__item {
@@ -16,13 +29,28 @@
     flex-direction: column;
     row-gap: 20px;
 
-    &:not(:first-child) {
-      padding-left: var(--studiesItemPaddingX);
+    @include desktop {
+      --studiesItemPaddingX: 32px;
     }
 
-    &:not(:last-child) {
-      padding-right: var(--studiesItemPaddingX);
-      border-right: 1px solid var(--color-light);
+    @include mobile-above {
+      &:not(:first-child) {
+        padding-left: var(--studiesItemPaddingX);
+      }
+
+      &:not(:last-child) {
+        padding-right: var(--studiesItemPaddingX);
+        border-right: 1px solid var(--color-light);
+      }
+    }
+
+    @include mobile {
+      padding: 42px 50px;
+      min-width: 350px;
+      color: var(--color-light);
+      background-color: var(--color-dark);
+      border-radius: var(--border-radius-large);
+      scroll-snap-align: start;
     }
   }
 
