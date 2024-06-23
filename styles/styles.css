@@ -928,4 +928,57 @@ h4 {
   .studies__link:active {
     opacity: 0.7;
   }
+}
+
+.process__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  counter-reset: custom-counter;
+  list-style: none;
+}
+.process__item {
+  counter-increment: custom-counter;
+}
+.process__accordion {
+  padding: 40px 60px;
+  background-color: var(--color-grey);
+  border: var(--border);
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow);
+  transition-duration: var(--transition-duration);
+}
+@media (hover: hover) {
+  .process__accordion:hover {
+    background-color: var(--color-accent);
+  }
+}
+@media (hover: none) {
+  .process__accordion:active {
+    background-color: var(--color-accent);
+  }
+}
+.process__accordion[open] {
+  background-color: var(--color-accent);
+}
+.process__accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.process__accordion-title {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.process__accordion-title::before {
+  content: "0" counter(custom-counter);
+  font-size: 2em;
 }/*# sourceMappingURL=styles.css.map */
