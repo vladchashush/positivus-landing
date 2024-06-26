@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Positivus</title>
     <link rel="stylesheet" href="/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -1055,7 +1061,7 @@
               </ul>
             </div>
             <div class="reviews__actions">
-              <button class="reviews__arrow-button">
+              <button class="reviews__arrow-button left-button">
                 <span class="visually-hidden" type="button"
                   >Previous slide</span
                 >
@@ -1162,7 +1168,7 @@
                   </li>
                 </ul>
               </div>
-              <button class="reviews__arrow-button">
+              <button class="reviews__arrow-button right-button">
                 <span class="visually-hidden" type="button"
                   >Previous slide</span
                 >
@@ -1451,6 +1457,19 @@
         </ul>
       </div>
     </dialog>
-    <script src="/script.js" defer></script>
+    <script defer>
+      const swiper = new Swiper(".reviews__slider-list", {
+        loop: true,
+        durection: "horizontal",
+        pagination: {
+          el: ".pagination__list",
+          clickable: "true",
+        },
+        navigation: {
+          nextEl: ".right-button",
+          prevEl: ".left-button",
+        },
+      });
+    </script>
   </body>
 </html>
