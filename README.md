@@ -47,10 +47,10 @@ Example:
 - Designed with mobile-first principles to prioritize smaller screens and scale up for larger devices.
 - Implemented flexible layouts and fluid grids for optimal user experience on any device.
 
-<!--  
+
 ## 🖥️ Demo
-### 🎯 Live Preview - Check out the fully responsive demo of this project in action!
--->
+### 🎯 [Live Preview](https://vladchashush.github.io/positivus-landing/) - Check out the fully responsive demo of this project in action!
+
 
 ## 📂 Project Structure
 The project structure is modular and easy to navigate:
