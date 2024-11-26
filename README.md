@@ -1,4 +1,8 @@
 # 🌐 Demo Project: BEM + Sass + Responsive Design
+Please choose your language:
+
+- [English](README.md)
+- [Русский](README.ru.md)
 
 Welcome to the **Demo Project**, a showcase of my frontend development skills in **HTML, CSS**, and **Sass**, highlighting:
 
