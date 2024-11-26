@@ -7,6 +7,8 @@ Welcome to the **Demo Project**, a showcase of my frontend development skills in
 - **Sass Preprocessor** for modular, reusable, and scalable styling.
 - **Mobile-First Responsive Design** to ensure a seamless experience across all devices.
 
+## 🖥️ Demo
+### 🎯 [Live Preview](https://vladchashush.github.io/positivus-landing/) - Check out the fully responsive demo of this project in action!
 
 ## 🛠️ Key Features
 
@@ -48,8 +50,6 @@ Example:
 - Implemented flexible layouts and fluid grids for optimal user experience on any device.
 
 
-## 🖥️ Demo
-### 🎯 [Live Preview](https://vladchashush.github.io/positivus-landing/) - Check out the fully responsive demo of this project in action!
 
 
 ## 📂 Project Structure
