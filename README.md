@@ -56,15 +56,27 @@ The project structure is modular and easy to navigate:
 
 ```bash
 .
-├── index.html      # Main HTML file
-├── scss/           # Sass source files
-│   ├── main.scss   # Root Sass file
-│   ├── _mixins.scss # Reusable mixins
-│   ├── _variables.scss # Variables for colors, fonts, etc.
-│   └── _base.scss  # Base styles
-├── css/            # Compiled CSS
-│   └── main.css    # Compiled CSS file
-└── README.md       # Project documentation
+├── fonts/              # Fonts
+├── images/             # Images
+│ ├── icons/            # Icons
+│ ├── partners/         # Images for the "Partners" section
+│ ├── services/         # Images for the "Services" section
+│ └── team/             # Images for the "Team" section
+├── styles/             # Project Styles
+│ ├── blocks/           # Styles for individual blocks
+│ │ ├── _fonts.scss     # Font styles
+│ │ ├── _globals.scss   # Global styles
+│ │ ├── _media.scss     # Media queries
+│ │ ├── _mixins.scss    # Mixins
+│ │ ├── _normalize.scss # Reset browser default styles
+│ │ └── _utils.scss     # Utility classes
+│ ├── _variables.scss   # Variables
+│ ├── styles.scss       # Main SCSS file
+│ ├── styles.css        # Compiled CSS
+│ └── styles.css.map    # CSS source map
+├── index.html          # Main HTML page
+├── script.js           # Project JavaScript
+└── README.md           # Project documentation
 ```
 
 ## 🎯 Goals of This Project
