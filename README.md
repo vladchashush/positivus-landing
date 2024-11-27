@@ -6,6 +6,11 @@ Welcome to the **Demo Project**, a showcase of my frontend development skills in
 - **BEM Methodology** for clear and maintainable CSS structure.
 - **Sass Preprocessor** for modular, reusable, and scalable styling.
 - **Mobile-First Responsive Design** to ensure a seamless experience across all devices.
+<!-- markdownlint-disable MD033 MD041 -->
+<p align="center">
+<a href="https://vladchashush.github.io/positivus-landing/"><img src="positivus_screenshot_hero.png" /></a>
+</p>
+<!-- markdownlint-enable MD033 -->
 
 ## 🖥️ Demo
 ### 🎯 [Live Preview](https://vladchashush.github.io/positivus-landing/) - Check out the fully responsive demo of this project in action!
